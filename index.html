@@ -20,10 +20,23 @@
 		<nav class="navbar navbar-light bg-light">
 		  <a class="navbar-brand"><i class="fas fa-car text-primary"></i> Vehicle Finder</a>
 		  <form class="form-inline">
-		    <input class="form-control mr-sm-2" type="text" placeholder="Search Vehicle Model" aria-label="Search" id="search">
+		    <input class="form-control mr-sm-2" type="text" placeholder="Search Vehicle Model" id="search">
 		    <button class="btn btn-outline-primary my-2 my-sm-0" onclick="getInfo()">Search</button>
 		  </form>
 		</nav>
+
+		<!--MAIN SECTION-->
+		<div class="container-flex py-5">
+			<div class="row mx-5">
+				<div class="col-12 col-lg-4 mx-auto">
+					<img id="image" src="img/img-placeHolder.jpeg" alt="Vehicle">
+				</div>
+				<div class="col-12 col-lg-8 mx-auto">
+					<h1>Vehicle Model: <span id="vehicleName"></span></h1>
+					<h3>Price: $<span id="price"></span></h3>
+				</div>
+			</div>
+		</div>
 
 		<!-- JQUERY SCRIPT -->
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
