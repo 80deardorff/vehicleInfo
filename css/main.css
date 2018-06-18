@@ -1,0 +1,13 @@
+
+/* NAVIGATION BAR */
+input#search.form-control.mr-sm-2.d-inline-block {
+  width: 282px;
+  vertical-align: middle;
+}
+
+/* MAIN SECTION */
+div.div-1 img,
+div.div-2 {
+  box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.5);
+  border-radius: .25rem;
+}

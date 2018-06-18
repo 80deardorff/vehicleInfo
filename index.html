@@ -19,19 +19,19 @@
 		<!-- NAVIGATION BAR -->
 		<nav class="navbar navbar-light bg-light">
 		  <a class="navbar-brand"><i class="fas fa-car text-primary"></i> Vehicle Finder</a>
-		  <form class="form-inline">
-		    <input class="form-control mr-sm-2" type="text" placeholder="Search Vehicle Model" id="search">
+			<div class="d-inline">
+		    <input class="form-control mr-sm-2 d-inline-block" type="text" placeholder="Search Vehicle Model" id="search">
 		    <button class="btn btn-outline-primary my-2 my-sm-0" onclick="getInfo()">Search</button>
-		  </form>
+		  </div>
 		</nav>
 
 		<!--MAIN SECTION-->
 		<div class="container-flex py-5">
 			<div class="row mx-5">
-				<div class="col-12 col-lg-4 mx-auto">
-					<img id="image" src="img/img-placeHolder.jpeg" alt="Vehicle">
+				<div class="div-1 col-12 col-lg-4 mx-auto">
+					<img id="image" class="img-thumbnail" src="img/img-placeHolder.jpeg" alt="Vehicle">
 				</div>
-				<div class="col-12 col-lg-8 mx-auto">
+				<div class="div-2 col-12 col-lg-8 mx-auto border">
 					<h1>Vehicle Model: <span id="vehicleName"></span></h1>
 					<h3>Price: $<span id="price"></span></h3>
 				</div>

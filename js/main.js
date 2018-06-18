@@ -68,21 +68,23 @@ var myImage = document.getElementById('image');
 
 function getInfo() {
   for (var i = 0; i < model.length; i++) {
-    if ((mySearch.value == model[i].name) && (model[i].sold == false)) { console.log('num1');
-      // myVehicleName.innerText = model[i].name;
-      // myPrice.innerText = model[i].price;
-      // myImage = model[i].image;
+    console.log(i);
+    if ((mySearch.value == model[i].name) && (model[i].sold == false)) {
+      console.log('statement 1');
+      myVehicleName.innerText = model[i].name;
+      myPrice.innerText = model[i].price;
+      myPrice.style.color = 'black'
+      myImage.src = model[i].image;
+      return;
     }
-
-    else if ((mySearch.value == model[i].name) && (model[i].sold)) { console.log('num2');
-      // myVehicleName.innerText = model[i].name;
-      // myPrice.innerText = 'Vehicle Sold';
-      // myPrice.style.color = 'red'
-      // myImage.src = model[i].image;
+    else if ((mySearch.value == model[i].name) && (model[i].sold)) {
+      console.log('statement 2');
+      myVehicleName.innerText = model[i].name;
+      myPrice.innerText = ' Vehicle Sold';
+      myPrice.style.color = 'red'
+      myImage.src = model[i].image;
+      return;
     }
   }
+  alert("Vehicle is not in inventory. Please search another vehicle.");
 };
-//   return;
-//
-//   alert("Vehicle is not in inventory.");
-// };
