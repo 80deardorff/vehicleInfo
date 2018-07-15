@@ -68,9 +68,7 @@ var myImage = document.getElementById('image');
 
 function getInfo() {
   for (var i = 0; i < model.length; i++) {
-    console.log(i);
     if ((mySearch.value == model[i].name) && (model[i].sold == false)) {
-      console.log('statement 1');
       myVehicleName.innerText = model[i].name;
       myPrice.innerText = model[i].price;
       myPrice.style.color = 'black'
@@ -78,7 +76,6 @@ function getInfo() {
       return;
     }
     else if ((mySearch.value == model[i].name) && (model[i].sold)) {
-      console.log('statement 2');
       myVehicleName.innerText = model[i].name;
       myPrice.innerText = ' Vehicle Sold';
       myPrice.style.color = 'red'

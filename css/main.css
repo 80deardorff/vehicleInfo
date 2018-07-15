@@ -8,6 +8,6 @@ input#search.form-control.mr-sm-2.d-inline-block {
 /* MAIN SECTION */
 div.div-1 img,
 div.div-2 {
-  box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.5);
+  box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.3);
   border-radius: .25rem;
 }
